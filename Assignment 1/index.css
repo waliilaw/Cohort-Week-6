@@ -1,0 +1,75 @@
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6d5eac, #b8c6db); /* Gradient background */
+}
+
+/* Container for the assignment */
+.assignment-container {
+    background: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Input styles */
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #6d5eac; /* Border color matching the gradient */
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+/* Input focus effect */
+input:focus {
+    outline: none;
+    border-color: #b8c6db; /* Change border color on focus */
+}
+
+/* Paragraph styles */
+p {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 600px) {
+    body {
+        padding: 20px; /* Add padding for smaller screens */
+    }
+    
+    .assignment-container {
+        width: 100%; /* Full width on small screens */
+    }
+
+    input {
+        width: 100%; /* Full width input on small screens */
+    }
+
+    p {
+        font-size: 18px; /* Slightly smaller text on small screens */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    input {
+        font-size: 18px; /* Slightly larger text on medium screens */
+    }
+
+    p {
+        font-size: 22px; /* Larger text on medium screens */
+    }
+}
